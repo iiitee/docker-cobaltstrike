@@ -10,4 +10,4 @@ token=`curl -s https://download.cobaltstrike.com/download -d "dlkey=${COBALTSTRI
 curl -s https://download.cobaltstrike.com/downloads/${token}/latest410/cobaltstrike-dist-linux.tgz -o /tmp/cobaltstrike.tgz
 tar zxf /tmp/cobaltstrike.tgz -C /opt
 echo ${COBALTSTRIKE_KEY} | /opt/cobaltstrike/update
-/opt/cobaltstrike/teamserver $IPADDRESS ${COBALTSTRIKE_PASS} /opt/cobaltstrike/profiles/${COBALTSTRIKE_PROFILE}.profile ${COBALTSTRIKE_EXP}
+/opt/cobaltstrike/server/teamserver $IPADDRESS ${COBALTSTRIKE_PASS} /opt/cobaltstrike/profiles/${COBALTSTRIKE_PROFILE}.profile ${COBALTSTRIKE_EXP}
